@@ -1,0 +1,9 @@
+pyinstaller "projects/Mitsubishi/Mitsubishi.py" `
+  --onefile `
+  --name "Mitsubishi_auto" `
+  --paths "Common" `
+  --add-data "${PWD}\Common\AudioConfigArta;AudioConfigArta" `
+  --hidden-import "tkinter" `
+  --distpath "Projects/Mitsubishi/dist" `
+  --workpath "Projects/Mitsubishi/build" `
+  --specpath "Projects/Mitsubishi"

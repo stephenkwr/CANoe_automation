@@ -1,0 +1,9 @@
+pyinstaller "projects/Suzuki/Suzuki.py" `
+  --onefile `
+  --name "Suzuki_auto" `
+  --paths "Common" `
+  --add-data "${PWD}\Common\AudioConfigArta;AudioConfigArta" `
+  --hidden-import "tkinter" `
+  --distpath "Projects/Suzuki/dist" `
+  --workpath "Projects/Suzuki/build" `
+  --specpath "Projects/Suzuki"
